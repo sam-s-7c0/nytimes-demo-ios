@@ -20,6 +20,11 @@
 		E0B8151F2ADE70E400182920 /* NewsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B8151A2ADE70E400182920 /* NewsListInteractor.swift */; };
 		E0B815202ADE70E400182920 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B8151B2ADE70E400182920 /* NewsListViewController.swift */; };
 		E0B815222ADE713D00182920 /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B815212ADE713D00182920 /* NewsListViewController.xib */; };
+		E0B815292ADEA88600182920 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B815282ADEA88600182920 /* APIClient.swift */; };
+		E0B8152B2ADEA89600182920 /* NYNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B8152A2ADEA89600182920 /* NYNetworkError.swift */; };
+		E0B815312ADEA8C800182920 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B815302ADEA8C800182920 /* URLRequest.swift */; };
+		E0B815372ADEDAE200182920 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B815362ADEDAE200182920 /* NetworkConstants.swift */; };
+		E0B815392ADF033800182920 /* URLRequest+HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B815382ADF033800182920 /* URLRequest+HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		E0B8151A2ADE70E400182920 /* NewsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListInteractor.swift; sourceTree = "<group>"; };
 		E0B8151B2ADE70E400182920 /* NewsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		E0B815212ADE713D00182920 /* NewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
+		E0B815282ADEA88600182920 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E0B8152A2ADEA89600182920 /* NYNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYNetworkError.swift; sourceTree = "<group>"; };
+		E0B815302ADEA8C800182920 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		E0B815362ADEDAE200182920 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		E0B815382ADF033800182920 /* URLRequest+HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+HTTPMethod.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +117,10 @@
 		E0B814DC2ADD6FF100182920 /* NYTimes */ = {
 			isa = PBXGroup;
 			children = (
-				E0B815102ADE6FD300182920 /* Modules */,
-				E0B8150D2ADE60F900182920 /* Bootstrapper */,
 				E0B814DD2ADD6FF100182920 /* AppDelegate.swift */,
+				E0B8150D2ADE60F900182920 /* Bootstrapper */,
+				E0B815102ADE6FD300182920 /* Modules */,
+				E0B815232ADEA83800182920 /* Network */,
 				E0B814E62ADD6FF100182920 /* Assets.xcassets */,
 				E0B814E82ADD6FF100182920 /* LaunchScreen.storyboard */,
 				E0B814EB2ADD6FF100182920 /* Info.plist */,
@@ -161,6 +172,18 @@
 				E0B815212ADE713D00182920 /* NewsListViewController.xib */,
 			);
 			path = NewsList;
+			sourceTree = "<group>";
+		};
+		E0B815232ADEA83800182920 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0B815362ADEDAE200182920 /* NetworkConstants.swift */,
+				E0B815282ADEA88600182920 /* APIClient.swift */,
+				E0B8152A2ADEA89600182920 /* NYNetworkError.swift */,
+				E0B815302ADEA8C800182920 /* URLRequest.swift */,
+				E0B815382ADF033800182920 /* URLRequest+HTTPMethod.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B8151E2ADE70E400182920 /* NewsListRouter.swift in Sources */,
+				E0B815312ADEA8C800182920 /* URLRequest.swift in Sources */,
 				E0B8151F2ADE70E400182920 /* NewsListInteractor.swift in Sources */,
 				E0B8150F2ADE612300182920 /* Bootstrapper.swift in Sources */,
+				E0B815292ADEA88600182920 /* APIClient.swift in Sources */,
 				E0B815202ADE70E400182920 /* NewsListViewController.swift in Sources */,
+				E0B815372ADEDAE200182920 /* NetworkConstants.swift in Sources */,
+				E0B8152B2ADEA89600182920 /* NYNetworkError.swift in Sources */,
 				E0B814DE2ADD6FF100182920 /* AppDelegate.swift in Sources */,
 				E0B8151C2ADE70E400182920 /* NewsListProtocols.swift in Sources */,
+				E0B815392ADF033800182920 /* URLRequest+HTTPMethod.swift in Sources */,
 				E0B8151D2ADE70E400182920 /* NewsListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
