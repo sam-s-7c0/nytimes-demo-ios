@@ -8,18 +8,20 @@
 import Foundation
 import UIKit
 
-class Bootstrapper {
-   
+final class Bootstrapper {
+  
   private var window : UIWindow
   private static var shared : Bootstrapper? = nil
-      
+  
   private init(window : UIWindow) {
     self.window = window
   }
   
-  static func initialize(){
-    shared = Bootstrapper(window: makeNewWindow())
-    shared!.bootstrap()
+  static func initialize() {
+    if shared == nil {
+      shared = Bootstrapper(window: makeNewWindow())
+    }
+    shared?.bootstrap()
   }
   
   private static func makeNewWindow() -> UIWindow {

@@ -16,9 +16,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Bootstrapper.initialize()
     return true
   }
-
-
-
-
 }
-
