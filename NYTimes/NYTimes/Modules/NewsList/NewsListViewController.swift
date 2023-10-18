@@ -10,8 +10,8 @@ import UIKit
 final class NewsListViewController: UIViewController {
   
   var presenter: NewsListPresenterProtocol?
-  @IBOutlet weak var tableviewNews: UITableView!
-  @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+  @IBOutlet private weak var tableviewNews: UITableView!
+  @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
   
   override func viewDidLoad() {
     super.viewDidLoad()

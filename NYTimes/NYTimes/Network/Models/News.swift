@@ -29,9 +29,9 @@ struct News: Codable {
   
   enum CodingKeys: String, CodingKey {
     case url
-    case  byline, title
+    case byline, title
     case publishedDate = "published_date"
-    case  id
+    case id
     case media
   }
 }
