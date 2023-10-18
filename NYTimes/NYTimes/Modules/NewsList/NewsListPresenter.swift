@@ -35,7 +35,12 @@ extension NewsListPresenter: NewsListPresenterProtocol {
   }
   
   func showNewsDetail(indexPath: IndexPath) {
+    guard let news = newsResponse?.news? [indexPath.row],
+          let newsUrl = news.url,
+          let title = news.title
+    else { return }
     
+    self.router.showNewsDetail(newsUrl: newsUrl , title:title)
   }
   
   func fetchNews(result: NewsResponse) {

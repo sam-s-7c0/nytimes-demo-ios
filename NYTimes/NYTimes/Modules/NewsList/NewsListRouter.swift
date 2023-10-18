@@ -10,7 +10,7 @@ import UIKit
 final class NewsListRouter {
   
   weak var viewController: UIViewController?
-  weak var navigationController: UINavigationController?
+  var navigationController: UINavigationController?
   
   static func createModule(using navigationController: UINavigationController) -> UIViewController {
     
@@ -27,14 +27,16 @@ final class NewsListRouter {
     view.presenter = presenter
     interactor.presenter = presenter
     router.viewController = view
-    
+    router.navigationController = navigationController
+
     return view
   }
 }
 
 extension NewsListRouter: NewsListWireframeProtocol {
   
-  func showNewsDetail(news: News) {
-    
+  func showNewsDetail(newsUrl: String , title: String) {
+    let controller = NewsDetailRouter.createModule(newsUrl: newsUrl, title: title)
+    self.navigationController?.pushViewController(controller, animated: true)
   }
 }

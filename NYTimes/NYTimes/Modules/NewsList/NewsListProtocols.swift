@@ -9,7 +9,7 @@ import Foundation
 
 //MARK: Wireframe -
 protocol NewsListWireframeProtocol: AnyObject {
-  func showNewsDetail(news: News)
+  func showNewsDetail(newsUrl: String , title: String)
 }
 
 //MARK: Presenter -
