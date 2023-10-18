@@ -9,6 +9,7 @@ import Foundation
 
 enum NYNetworkError: Error {
   case connectionError
+  case urlInvalid
   case requestError
   case noData
   case responseError(HTTPURLResponse)
