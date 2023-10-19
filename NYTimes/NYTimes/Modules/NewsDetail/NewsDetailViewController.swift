@@ -74,13 +74,11 @@ extension NewsDetailViewController: WKNavigationDelegate {
   
   func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
     hideLoader()
-    //self.presenter?.urlLoadingFailed(error: error)
+    AlertHelper.showAlert(from: self, message: error.localizedDescription)
   }
   
   func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
     hideLoader()
-    
-    //FIXME:
-    //self.presenter?.urlLoadingFailed(error: error)
+    AlertHelper.showAlert(from: self, message: error.localizedDescription) 
   }
 }

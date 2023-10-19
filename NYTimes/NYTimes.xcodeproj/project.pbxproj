@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00170162AE10E47007E4375 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00170152AE10E47007E4375 /* AlertHelper.swift */; };
 		E0701E582AE0020C00A7E447 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0701E562AE0020C00A7E447 /* NewsTableViewCell.swift */; };
 		E0701E592AE0020C00A7E447 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0701E572AE0020C00A7E447 /* NewsTableViewCell.xib */; };
 		E0701E6B2AE01BC900A7E447 /* NewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0701E652AE01BC900A7E447 /* NewsDetailPresenter.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E00170152AE10E47007E4375 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		E0701E562AE0020C00A7E447 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		E0701E572AE0020C00A7E447 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		E0701E652AE01BC900A7E447 /* NewsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenter.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E00170142AE10E2A007E4375 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E00170152AE10E47007E4375 /* AlertHelper.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		E0701E642AE01B8D00A7E447 /* NewsDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		E0B815642ADFAA3200182920 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E00170142AE10E2A007E4375 /* Alert */,
 				E0B815652ADFAA3B00182920 /* Extensions */,
 			);
 			path = Helpers;
@@ -407,6 +418,7 @@
 				E0B814DE2ADD6FF100182920 /* AppDelegate.swift in Sources */,
 				E0B815562ADF19D200182920 /* News.swift in Sources */,
 				E0701E6E2AE01BC900A7E447 /* NewsDetailProtocols.swift in Sources */,
+				E00170162AE10E47007E4375 /* AlertHelper.swift in Sources */,
 				E0B815392ADF033800182920 /* URLRequest+HTTPMethod.swift in Sources */,
 				E0701E6D2AE01BC900A7E447 /* NewsDetailViewController.swift in Sources */,
 			);
