@@ -36,6 +36,7 @@ extension NewsListViewController : UITableViewDataSource {
     newsCell.accessibilityIdentifier = "myCell_\(indexPath.row)"
     
     guard let news = presenter?.newsResponse?.news? [indexPath.row] else {fatalError()}
+    
     newsCell.setupCell(news: news)
     
     return newsCell

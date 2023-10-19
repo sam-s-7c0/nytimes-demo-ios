@@ -16,8 +16,11 @@ protocol NewsListWireframeProtocol: AnyObject {
 protocol NewsListPresenterProtocol: AnyObject {
   var newsResponse: NewsResponse? { set get }
   var durationNews: Int { set get }
+  var arrayDuration: [String] { set get }
+
   func viewDidLoad()
   func startFetchingNews(duration : Int)
+  func selectedOption(duration : String?)
   func showNewsDetail(indexPath: IndexPath)
   func fetchNews(result: NewsResponse)
   func showError(error: NYNetworkError)

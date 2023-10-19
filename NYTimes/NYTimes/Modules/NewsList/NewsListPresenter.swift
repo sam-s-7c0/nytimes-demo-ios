@@ -14,6 +14,7 @@ final class NewsListPresenter {
   private let router: NewsListWireframeProtocol
   var newsResponse: NewsResponse?
   var durationNews: Int = 1
+  var arrayDuration = ["1", "7", "30"]
   
   init(interface: NewsListViewProtocol, interactor: NewsListInteractorProtocol?, router: NewsListWireframeProtocol) {
     self.view = interface
@@ -50,6 +51,13 @@ extension NewsListPresenter: NewsListPresenterProtocol {
   }
   
   func showError(error: NYNetworkError) {
-    view?.showError(error: error)
+    self.view?.hideLoader()
+    self.view?.showError(error: error)
+  }
+  
+  func selectedOption(duration: String?) {
+    if let selectedOption = duration, let duration = Int(selectedOption) {
+      startFetchingNews(duration: duration)
+    }
   }
 }

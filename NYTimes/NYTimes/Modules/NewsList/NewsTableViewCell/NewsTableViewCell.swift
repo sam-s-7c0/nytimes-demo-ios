@@ -23,6 +23,7 @@ class NewsTableViewCell: UITableViewCell {
   }
   
   func setupCell(news: News) {
+    imageviewNews.image = nil
     self.labelTitle.text = news.title
     self.labelBy.text = news.byline
     self.labelDate.text = news.publishedDate
