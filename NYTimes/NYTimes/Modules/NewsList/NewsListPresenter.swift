@@ -13,7 +13,7 @@ final class NewsListPresenter {
   var interactor: NewsListInteractorProtocol?
   private let router: NewsListWireframeProtocol
   var newsResponse: NewsResponse?
-  var duration: Int = 1
+  var durationNews: Int = 1
   
   init(interface: NewsListViewProtocol, interactor: NewsListInteractorProtocol?, router: NewsListWireframeProtocol) {
     self.view = interface
@@ -25,13 +25,13 @@ final class NewsListPresenter {
 extension NewsListPresenter: NewsListPresenterProtocol {
   
   func viewDidLoad() {
-    self.startFetchingNews(duration: duration)
+    startFetchingNews(duration: durationNews)
   }
   
   func startFetchingNews(duration : Int) {
-    self.duration = duration
-    self.view?.showLoader()
-    self.interactor?.fetchNews(duration: duration)
+    durationNews = duration
+    view?.showLoader()
+    interactor?.fetchNews(duration: duration)
   }
   
   func showNewsDetail(indexPath: IndexPath) {
@@ -40,16 +40,16 @@ extension NewsListPresenter: NewsListPresenterProtocol {
           let title = news.title
     else { return }
     
-    self.router.showNewsDetail(newsUrl: newsUrl , title:title)
+    router.showNewsDetail(newsUrl: newsUrl , title:title)
   }
   
   func fetchNews(result: NewsResponse) {
-    self.newsResponse = result
-    self.view?.hideLoader()
-    self.view?.refreshView()
+    newsResponse = result
+    view?.hideLoader()
+    view?.refreshView()
   }
   
   func showError(error: NYNetworkError) {
-    self.view?.showError(error: error)
+    view?.showError(error: error)
   }
 }

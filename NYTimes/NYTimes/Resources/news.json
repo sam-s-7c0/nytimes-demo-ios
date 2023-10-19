@@ -1,0 +1,507 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "url": "https://www.nytimes.com/2023/10/10/technology/sam-bankman-fried-trial-lawyers-judge.html",
+      "id": 100000009123944,
+      "published_date": "2023-10-10",
+      "byline": "By Matthew Goldstein and David Yaffe-Bellany",
+      "title": "‘Don’t Do That Again’: Sam Bankman-Fried’s Lawyers Under Fire From Judge",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10sbf-defense-01-mptc/10sbf-defense-01-mptc-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10sbf-defense-01-mptc/10sbf-defense-01-mptc-mediumThreeByTwo210-v4.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10sbf-defense-01-mptc/10sbf-defense-01-mptc-mediumThreeByTwo440-v4.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/12/us/politics/scalise-jordan-house-speaker.html",
+      "id": 100000009129124,
+      "published_date": "2023-10-12",
+      "byline": "By Luke Broadwater, Catie Edmondson and Karoun Demirjian",
+      "title": "Scalise Withdraws as Speaker Candidate, Leaving G.O.P. in Chaos",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/12dc-cong-kpbq/12dc-cong-kpbq-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/12dc-cong-kpbq/12dc-cong-kpbq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/12dc-cong-kpbq/12dc-cong-kpbq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/16/opinion/trump-republican-primaries.html",
+      "id": 100000009132190,
+      "published_date": "2023-10-16",
+      "byline": "By Katherine Miller",
+      "title": "The Plot Trump Lost",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/16/multimedia/16miller1-kmpl/16miller1-kmpl-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/16/multimedia/16miller1-kmpl/16miller1-kmpl-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/16/multimedia/16miller1-kmpl/16miller1-kmpl-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/14/us/house-speaker-republicans-jordan.html",
+      "id": 100000009132967,
+      "published_date": "2023-10-14",
+      "byline": "By Karoun Demirjian",
+      "title": "Jordan Activates Right-Wing Pressure Campaign in Push to Win Speakership",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14dc-repubs-01-wkhz/14dc-repubs-01-wkhz-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14dc-repubs-01-wkhz/14dc-repubs-01-wkhz-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14dc-repubs-01-wkhz/14dc-repubs-01-wkhz-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/10/business/remote-work-effects.html",
+      "id": 100000009118821,
+      "published_date": "2023-10-10",
+      "byline": "By Emma Goldberg",
+      "title": "Here’s What We Do and Don’t Know About the Effects of Remote Work",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/05/multimedia/00RemoteWorkEffects-kcqv/00RemoteWorkEffects-kcqv-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/05/multimedia/00RemoteWorkEffects-kcqv/00RemoteWorkEffects-kcqv-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/05/multimedia/00RemoteWorkEffects-kcqv/00RemoteWorkEffects-kcqv-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/14/us/politics/quinn-mitchell-new-hampshire-desantis.html",
+      "id": 100000009133352,
+      "published_date": "2023-10-14",
+      "byline": "By Neil Vigdor",
+      "title": "Known for His Pointed Questions, a 15-Year-Old Is Ejected From a G.O.P. Event",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14pol-quinn-01-pqkv/14pol-quinn-01-pqkv-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14pol-quinn-01-pqkv/14pol-quinn-01-pqkv-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14pol-quinn-01-pqkv/14pol-quinn-01-pqkv-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/12/science/solar-eclipse-how-to-watch.html",
+      "id": 100000009124446,
+      "published_date": "2023-10-12",
+      "byline": "By Katrina Miller",
+      "title": "When, Where and How to Watch the Annular Solar Eclipse",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/science/12eclipse-explainer-01/12eclipse-explainer-01-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/science/12eclipse-explainer-01/12eclipse-explainer-01-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/science/12eclipse-explainer-01/12eclipse-explainer-01-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/interactive/2023/10/11/science/solar-eclipse-map.html",
+      "id": 100000009127657,
+      "published_date": "2023-10-11",
+      "byline": "By Jonathan Corum",
+      "title": "Maps of the 2023 ‘Ring of Fire’ Solar Eclipse",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/multimedia/2023-10-14-annular-eclipse-map-index/2023-10-14-annular-eclipse-map-index-thumbStandard-v3.png",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/multimedia/2023-10-14-annular-eclipse-map-index/2023-10-14-annular-eclipse-map-index-mediumThreeByTwo210-v3.png",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/multimedia/2023-10-14-annular-eclipse-map-index/2023-10-14-annular-eclipse-map-index-mediumThreeByTwo440-v3.png",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/12/us/politics/trump-hezbollah-israel-palestine.html",
+      "id": 100000009129594,
+      "published_date": "2023-10-12",
+      "byline": "By Neil Vigdor, Alyce McFadden and Nicholas Nehamas",
+      "title": "Trump’s Remarks on Hezbollah and Netanyahu Prompt Bipartisan Outcry",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/pol-trump-backlash-gbcq/pol-trump-backlash-gbcq-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/pol-trump-backlash-gbcq/pol-trump-backlash-gbcq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/pol-trump-backlash-gbcq/pol-trump-backlash-gbcq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/11/business/air-traffic-control-austin-airport-fedex-southwest.html",
+      "id": 100000009092045,
+      "published_date": "2023-10-11",
+      "byline": "By Sydney Ember and Emily Steel",
+      "title": "How a Series of Air Traffic Control Lapses Nearly Killed 131 People",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/06/multimedia/00air-safety-austin-wbqp/00ait-safety-austin-wbqp-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/06/multimedia/00air-safety-austin-wbqp/00ait-safety-austin-wbqp-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/06/multimedia/00air-safety-austin-wbqp/00ait-safety-austin-wbqp-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/09/business/charles-f-feeney-dead.html",
+      "id": 100000006667229,
+      "published_date": "2023-10-09",
+      "byline": "By Robert D. McFadden",
+      "title": "Charles Feeney, Who Made a Fortune and Then Gave It Away, Dies at 92",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/obituaries/00feeney1/00feeney1-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/obituaries/00feeney1/merlin_59806516_d8530af7-6783-42e8-a780-337f3faf6aeb-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/11/obituaries/00feeney1/merlin_59806516_d8530af7-6783-42e8-a780-337f3faf6aeb-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/12/opinion/israel-palestinians-gaza-peace.html",
+      "id": 100000009127595,
+      "published_date": "2023-10-12",
+      "byline": "By David Brooks",
+      "title": "The Missed Chance for Peace",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/opinion/12brooks/12brooks-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/opinion/12brooks/12brooks-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/opinion/12brooks/12brooks-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/14/opinion/international-world/israel-hamas-war.html",
+      "id": 100000009131534,
+      "published_date": "2023-10-14",
+      "byline": "By Thomas L. Friedman",
+      "title": "Why Israel Is Acting This Way",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/multimedia/00friedman-qzmc/00friedman-qzmc-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/multimedia/00friedman-qzmc/00friedman-qzmc-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/multimedia/00friedman-qzmc/00friedman-qzmc-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/10/us/harvard-israel-gaza-hamas-reaction.html",
+      "id": 100000009125581,
+      "published_date": "2023-10-10",
+      "byline": "By Anemona Hartocollis, Stephanie Saul and Vimal Patel",
+      "title": "At Harvard, a Battle Over What Should Be Said About the Hamas Attacks",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10nat-harvard-top-fclw/10nat-harvard-top-fclw-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10nat-harvard-top-fclw/10nat-harvard-top-fclw-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/10nat-harvard-top-fclw/10nat-harvard-top-fclw-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/12/well/live/fever-normal-body-temperature.html",
+      "id": 100000009092033,
+      "published_date": "2023-10-12",
+      "byline": "By Dana G. Smith",
+      "title": "The Average Human Body Temperature Is Not 98.6 Degrees",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/well/12Well-Fever/12Well-Fever-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/well/12Well-Fever/12Well-Fever-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/17/well/12Well-Fever/12Well-Fever-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/10/world/middleeast/israel-gaza-war-hamas-deaths-killings.html",
+      "id": 100000009125978,
+      "published_date": "2023-10-10",
+      "byline": "By The New York Times",
+      "title": "Hamas Leaves Trail of Terror in Israel",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/2023-10-10-atrocities-promo-index/2023-10-10-atrocities-promo-index-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/2023-10-10-atrocities-promo-index/2023-10-10-atrocities-promo-index-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/10/multimedia/2023-10-10-atrocities-promo-index/2023-10-10-atrocities-promo-index-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/13/world/middleeast/hamas-israel-attack-gaza.html",
+      "id": 100000009131212,
+      "published_date": "2023-10-13",
+      "byline": "By Patrick Kingsley and Ronen Bergman",
+      "title": "The Secrets Hamas Knew About Israel’s Military",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14Israel-Reconstruct-hgqj/14Israel-Reconstruct-hgqj-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14Israel-Reconstruct-hgqj/14Israel-Reconstruct-hgqj-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/14/multimedia/14Israel-Reconstruct-hgqj/14Israel-Reconstruct-hgqj-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/10/magazine/kamala-harris.html",
+      "id": 100000009121062,
+      "published_date": "2023-10-10",
+      "byline": "By Astead W. Herndon",
+      "title": "In Search of Kamala Harris",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/22/magazine/22mag-Harris-images2/22mag-Harris-images2--thumbStandard-v4.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/22/magazine/22mag-Harris-images2/22mag-Harris-images2--mediumThreeByTwo210-v7.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/22/magazine/22mag-Harris-images2/22mag-Harris-images2--mediumThreeByTwo440-v7.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/15/us/muslim-boy-stabbed-landlord-chicago.html",
+      "id": 100000009134081,
+      "published_date": "2023-10-15",
+      "byline": "By Johnny Diaz, Mitch Smith and Robert Chiarito",
+      "title": "6-Year-Old Boy Fatally Stabbed in Anti-Muslim Attack, Authorities Say",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/15/multimedia/15xp-stabbing-sub-1/15xp-stabbing-sub-1-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/15/multimedia/15xp-stabbing-sub-1/vpzk-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/15/multimedia/15xp-stabbing-sub-1/vpzk-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2023/10/11/opinion/international-world/gaza-israel-palestinians-invasion.html",
+      "id": 100000009126406,
+      "published_date": "2023-10-11",
+      "byline": "By R. David Harden",
+      "title": "Israel Could Be Walking Into a Trap in Gaza",
+      "media": [
+        {
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/11harden-vklq/11harden-vklq-thumbStandard.jpg",
+              "format": "Standard Thumbnail"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/11harden-vklq/11harden-vklq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210"
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/10/12/multimedia/11harden-vklq/11harden-vklq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

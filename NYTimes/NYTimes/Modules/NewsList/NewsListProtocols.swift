@@ -15,7 +15,7 @@ protocol NewsListWireframeProtocol: AnyObject {
 //MARK: Presenter -
 protocol NewsListPresenterProtocol: AnyObject {
   var newsResponse: NewsResponse? { set get }
-  var duration: Int { set get }
+  var durationNews: Int { set get }
   func viewDidLoad()
   func startFetchingNews(duration : Int)
   func showNewsDetail(indexPath: IndexPath)

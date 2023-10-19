@@ -9,7 +9,7 @@ import UIKit
 
 final class NewsDetailPresenter {
   
-  weak private var view: NewsDetailViewProtocol?
+  private weak var view: NewsDetailViewProtocol?
   private let router: NewsDetailWireframeProtocol
   var newsUrl : String?
   var title : String?
