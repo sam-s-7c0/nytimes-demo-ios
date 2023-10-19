@@ -37,7 +37,6 @@ extension NewsListViewController : UITableViewDataSource {
     
     guard let news = presenter?.newsResponse?.news? [indexPath.row] else {fatalError()}
     
-    print(news)
     newsCell.setupCell(news: news)
     
     return newsCell
