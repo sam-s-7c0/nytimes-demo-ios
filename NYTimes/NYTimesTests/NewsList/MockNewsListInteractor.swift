@@ -9,12 +9,12 @@ import XCTest
 @testable import NYTimes
 
 class MockNewsListInteractor: NewsListInteractorProtocol {
- 
-  var presenter: NewsListPresenterProtocol?
   
+  var presenter: NewsListPresenterProtocol?
+  var fileName = ""
   func fetchNews(duration: Int) {
     
-    let result = JSONManager.getNewsData()
+    let result = JSONManager.getNewsData(jsonFile: fileName)
     
     switch result {
     case .success(let data):
@@ -25,9 +25,20 @@ class MockNewsListInteractor: NewsListInteractorProtocol {
         self.presenter?.showError(error: .decodingError(error))
       }
     case .failure(let error):
-        print(error.localizedDescription)
+      switch error {
+      case .noData:
+        self.presenter?.showError(error: .noData)
+      case .urlInvalid:
+        self.presenter?.showError(error: .urlInvalid)
+      case .connectionError:
+        self.presenter?.showError(error: .connectionError)
+      case .requestError:
+        self.presenter?.showError(error: .requestError)
+      case .responseError(let error):
+        self.presenter?.showError(error: .responseError(error))
+      case .decodingError(let error):
+        self.presenter?.showError(error: .decodingError(error))
+      }
     }
-    
-
   }
 }

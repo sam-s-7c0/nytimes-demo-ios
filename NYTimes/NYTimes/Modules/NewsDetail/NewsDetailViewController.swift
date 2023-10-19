@@ -10,14 +10,17 @@ import WebKit
 
 final class NewsDetailViewController: UIViewController {
   
-  var presenter: NewsDetailPresenterProtocol?
   @IBOutlet private weak var webViewDetail: WKWebView!
   @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
   
+  var newsDetail: DetailNews?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    presenter?.viewDidLoad()
     setupView()
+    if let newsDetail = newsDetail {
+      loadNewsDetail(url: newsDetail.urlString)
+    }
   }
 }
 
@@ -26,31 +29,28 @@ extension NewsDetailViewController {
   private func setupView() {
     webViewDetail.uiDelegate = self
     webViewDetail.navigationDelegate = self
+    title = newsDetail?.navigationTitle
   }
-}
 
-extension NewsDetailViewController: NewsDetailViewProtocol {
-  func showLoader() {
+  private func showLoader() {
     DispatchQueue.main.async {
       self.activityIndicatorView.isHidden = false
       self.activityIndicatorView.startAnimating()
     }
   }
   
-  func hideLoader() {
+  private func hideLoader() {
     DispatchQueue.main.async {
       self.activityIndicatorView.isHidden = true
       self.activityIndicatorView.stopAnimating()
     }
   }
   
-  func setNavigationTitle(title: String) {
-    self.title = title
-  }
-  
-  func setupNews(url: String) {
+  private func loadNewsDetail(url: String) {
+    showLoader()
     DispatchQueue.main.async {
       guard let url = URL(string: url) else {
+        self.hideLoader()
         return
       }
       

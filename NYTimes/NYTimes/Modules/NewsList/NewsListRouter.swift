@@ -28,7 +28,7 @@ final class NewsListRouter {
     interactor.presenter = presenter
     router.viewController = view
     router.navigationController = navigationController
-
+    
     return view
   }
 }
@@ -36,7 +36,11 @@ final class NewsListRouter {
 extension NewsListRouter: NewsListWireframeProtocol {
   
   func showNewsDetail(newsUrl: String , title: String) {
-    let controller = NewsDetailRouter.createModule(newsUrl: newsUrl, title: title)
-    self.navigationController?.pushViewController(controller, animated: true)
+    let storyboard = UIStoryboard(name: "DetailStoryboard", bundle: nil)
+    if let viewController = storyboard.instantiateViewController(withIdentifier: "NewsDetailViewController") as? NewsDetailViewController {
+      let newsDetail = DetailNews(urlString: newsUrl, navigationTitle: title)
+      viewController.newsDetail = newsDetail
+      self.navigationController?.pushViewController(viewController, animated: true)
+    }
   }
 }

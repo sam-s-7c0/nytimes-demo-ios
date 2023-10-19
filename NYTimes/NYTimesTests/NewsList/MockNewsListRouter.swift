@@ -10,12 +10,9 @@ import XCTest
 
 class MockNewsListRouter: NewsListWireframeProtocol {
   var expectation: XCTestExpectation?
-  var showNewsDetailCalled = false
   
   func showNewsDetail(newsUrl: String, title: String) {
-    showNewsDetailCalled = true
     expectation?.fulfill()
-
   }
   
 }

@@ -10,21 +10,24 @@ import XCTest
 
 class MockNewsListViewController: NewsListViewProtocol {
   var presenter: NewsListPresenterProtocol?
-  
+  var expectationShowError: XCTestExpectation?
+  var expectationShowLoader: XCTestExpectation?
+  var expectationHideLoader: XCTestExpectation?
+  var expectationRefreshTableview: XCTestExpectation?
+
   func showLoader() {
-    
+    expectationShowLoader?.fulfill()
   }
   
   func hideLoader() {
-    
+    expectationHideLoader?.fulfill()
   }
   
   func refreshView() {
-    
+    expectationRefreshTableview?.fulfill()
   }
   
   func showError(error: Error) {
-    
+    expectationShowError?.fulfill()
   }
-  
 }
