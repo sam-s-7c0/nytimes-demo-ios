@@ -15,7 +15,7 @@ protocol NewsListWireframeProtocol: AnyObject {
 //MARK: Presenter -
 protocol NewsListPresenterProtocol: AnyObject {
   var newsResponse: NewsResponse? { set get }
-  var duration: Int { set get }
+  var durationNews: Int { set get }
   var arrayDuration: [String] { set get }
 
   func viewDidLoad()

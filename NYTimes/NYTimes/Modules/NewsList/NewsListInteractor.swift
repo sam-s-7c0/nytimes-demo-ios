@@ -20,7 +20,6 @@ extension NewsListInteractor: NewsListInteractorProtocol {
   
   func fetchNews(duration: Int) {
     
-//    let urlString = "\(NetworkConstants.API_KEY)\(duration).json?api-key=\(NetworkConstants.API_KEY)"
     let urlString = "\(NetworkConstants.newsListURL)\(duration).json?api-key=\(NetworkConstants.API_KEY)"
 
     guard let request = URLRequest.init(url: urlString, method: .get, body: nil ) else {
