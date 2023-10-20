@@ -27,7 +27,7 @@ class MockNewsListViewController: NewsListViewProtocol {
     expectationRefreshTableview?.fulfill()
   }
   
-  func showError(error: Error) {
+  func showError(error: String) {
     expectationShowError?.fulfill()
   }
 }
