@@ -8,10 +8,30 @@
 import Foundation
 
 enum NYNetworkError: Error {
-  case connectionError
-  case urlInvalid
-  case requestError
   case noData
-  case responseError(HTTPURLResponse)
-  case decodingError(Error)
+  case connectionError
+  case requestError
+  case noInternet
+  case urlInvalid
+  case decodingError
+  case unknown
+  
+  func errorMessage() -> String {
+    switch self {
+    case .noData:
+      return "No data available."
+    case .connectionError:
+      return "Connection error."
+    case .requestError:
+      return "Request error."
+    case .noInternet:
+      return "No internet connection."
+    case .urlInvalid:
+      return "Invalid URL."
+    case .decodingError:
+      return "Data decoding error."
+    case .unknown:
+      return "An unknown error occurred."
+    }
+  }
 }

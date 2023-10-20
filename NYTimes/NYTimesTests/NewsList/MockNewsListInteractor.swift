@@ -21,8 +21,8 @@ class MockNewsListInteractor: NewsListInteractorProtocol {
       do {
         let result = try JSONDecoder().decode(NewsResponse.self, from: data)
         self.presenter?.fetchNews(result: result)
-      } catch let error {
-        self.presenter?.showError(error: .decodingError(error))
+      } catch _ {
+        self.presenter?.showError(error: .decodingError)
       }
     case .failure(let error):
       switch error {
@@ -30,14 +30,16 @@ class MockNewsListInteractor: NewsListInteractorProtocol {
         self.presenter?.showError(error: .noData)
       case .urlInvalid:
         self.presenter?.showError(error: .urlInvalid)
+      case .noInternet:
+        self.presenter?.showError(error: .noInternet)
       case .connectionError:
         self.presenter?.showError(error: .connectionError)
       case .requestError:
         self.presenter?.showError(error: .requestError)
-      case .responseError(let error):
-        self.presenter?.showError(error: .responseError(error))
-      case .decodingError(let error):
-        self.presenter?.showError(error: .decodingError(error))
+      case .decodingError:
+        self.presenter?.showError(error: .decodingError)
+      case .unknown:
+        self.presenter?.showError(error: .unknown)
       }
     }
   }

@@ -43,6 +43,7 @@
 		E0F03C7D2AE13DD700574575 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = E0F03C7B2AE13DD700574575 /* news.json */; };
 		E0F03C852AE13E2100574575 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03C822AE13E2100574575 /* Data+Extension.swift */; };
 		E0F03C862AE13E2100574575 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03C842AE13E2100574575 /* JSONManager.swift */; };
+		E0FC61AD2AE26A5500CEE8D7 /* ConnectivityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC61AC2AE26A5500CEE8D7 /* ConnectivityChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		E0F03C7B2AE13DD700574575 /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		E0F03C822AE13E2100574575 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		E0F03C842AE13E2100574575 /* JSONManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		E0FC61AC2AE26A5500CEE8D7 /* ConnectivityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B815542ADF199800182920 /* Models */,
+				E0FC61AC2AE26A5500CEE8D7 /* ConnectivityChecker.swift */,
 				E0B815362ADEDAE200182920 /* NetworkConstants.swift */,
 				E0B815282ADEA88600182920 /* APIClient.swift */,
 				E0B8152A2ADEA89600182920 /* NYNetworkError.swift */,
@@ -480,6 +483,7 @@
 				E0B815512ADF182C00182920 /* NewsListProtocols.swift in Sources */,
 				E0B814DE2ADD6FF100182920 /* AppDelegate.swift in Sources */,
 				E0B815562ADF19D200182920 /* News.swift in Sources */,
+				E0FC61AD2AE26A5500CEE8D7 /* ConnectivityChecker.swift in Sources */,
 				E00170162AE10E47007E4375 /* AlertHelper.swift in Sources */,
 				E0B815392ADF033800182920 /* URLRequest+HTTPMethod.swift in Sources */,
 				E0701E6D2AE01BC900A7E447 /* NewsDetailViewController.swift in Sources */,
