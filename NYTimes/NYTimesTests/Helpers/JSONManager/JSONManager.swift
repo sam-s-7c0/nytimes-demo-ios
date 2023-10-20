@@ -22,8 +22,8 @@ struct JSONManager {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 return .success(data)
-            } catch (let ex){
-              return .failure(.decodingError(ex))
+            } catch {
+              return .failure(.decodingError)
             }
         }else{
           return .failure(.noData)
