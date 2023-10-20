@@ -21,7 +21,6 @@ class BaseViewController: UIViewController {
     let dropdownImage = UIImage(named: "closure_down")
     let dropdownButton = UIBarButtonItem(image: dropdownImage, style: .plain, target: self, action: #selector(dropdownTapped))
     self.navigationItem.rightBarButtonItem = dropdownButton
-    
   }
   
   @objc func dropdownTapped() {}
