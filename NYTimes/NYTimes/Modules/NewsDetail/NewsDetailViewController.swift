@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class NewsDetailViewController: UIViewController {
+final class NewsDetailViewController: BaseViewController {
   
   @IBOutlet private weak var webViewDetail: WKWebView!
   @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
@@ -18,6 +18,7 @@ final class NewsDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
+    setupNavigation()
     if let newsDetail = newsDetail {
       loadNewsDetail(url: newsDetail.urlString)
     }
@@ -29,9 +30,15 @@ extension NewsDetailViewController {
   private func setupView() {
     webViewDetail.uiDelegate = self
     webViewDetail.navigationDelegate = self
-    title = newsDetail?.navigationTitle
   }
-
+  
+  private func setupNavigation() {
+    if let title = newsDetail?.navigationTitle {
+      setUpNavigation(navTitle: title)
+    }
+    backButton()
+  }
+  
   private func showLoader() {
     DispatchQueue.main.async {
       self.activityIndicatorView.isHidden = false
@@ -65,7 +72,7 @@ extension NewsDetailViewController: WKUIDelegate {
 }
 
 extension NewsDetailViewController: WKNavigationDelegate {
- 
+  
   func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
     let scrollableSize = CGSize(width: view.frame.size.width, height: webView.scrollView.contentSize.height)
     webViewDetail?.scrollView.contentSize = scrollableSize
@@ -79,6 +86,6 @@ extension NewsDetailViewController: WKNavigationDelegate {
   
   func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
     hideLoader()
-    AlertHelper.showAlert(from: self, message: error.localizedDescription) 
+    AlertHelper.showAlert(from: self, message: error.localizedDescription)
   }
 }
