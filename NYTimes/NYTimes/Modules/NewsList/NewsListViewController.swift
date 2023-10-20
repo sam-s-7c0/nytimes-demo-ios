@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NewsListViewController: UIViewController {
+final class NewsListViewController: BaseViewController {
   
   var presenter: NewsListPresenterProtocol?
   @IBOutlet private weak var tableviewNews: UITableView!
@@ -20,6 +20,14 @@ final class NewsListViewController: UIViewController {
     setupView()
     setupNavigation()
   }
+  
+  @objc override func dropdownTapped() {
+    if let options = presenter?.arrayDuration {
+      AlertHelper.showOptions(from: self, title: "Select duration", options: options) { selectedOption in
+        self.presenter?.selectedOption(duration: selectedOption)
+      }
+    }
+  }
 }
 
 extension NewsListViewController {
@@ -30,19 +38,8 @@ extension NewsListViewController {
   }
   
   private func setupNavigation() {
-    self.title = "NY Times Most Popular Articles"
-    let dropdownImage = UIImage(named: "closure_down")
-    let dropdownButton = UIBarButtonItem(image: dropdownImage, style: .plain, target: self, action: #selector(dropdownTapped))
-    self.navigationItem.rightBarButtonItem = dropdownButton
-    
-  }
-  
-  @objc func dropdownTapped() {
-    if let options = presenter?.arrayDuration {
-      AlertHelper.showOptions(from: self, title: "Select duration", options: options) { selectedOption in
-        self.presenter?.selectedOption(duration: selectedOption)
-      }
-    }
+    setUpNavigation(navTitle: "NY Times Most Popular Articles")
+    rightButton()
   }
 }
 
