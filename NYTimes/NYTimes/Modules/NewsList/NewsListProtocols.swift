@@ -38,5 +38,5 @@ protocol NewsListViewProtocol: AnyObject {
   func showLoader()
   func hideLoader()
   func refreshView()
-  func showError(error: Error)
+  func showError(error: String)
 }

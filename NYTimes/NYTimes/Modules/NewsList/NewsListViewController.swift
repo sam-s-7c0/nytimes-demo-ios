@@ -39,7 +39,7 @@ extension NewsListViewController {
   
   @objc func dropdownTapped() {
     if let options = presenter?.arrayDuration {
-      AlertHelper.showOptions(from: self, title: "Select an option", options: options) { selectedOption in
+      AlertHelper.showOptions(from: self, title: "Select duration", options: options) { selectedOption in
         self.presenter?.selectedOption(duration: selectedOption)
       }
     }
@@ -67,8 +67,8 @@ extension NewsListViewController: NewsListViewProtocol {
     }
   }
   
-  func showError(error: Error) {
-    AlertHelper.showAlert(from: self, message: error.localizedDescription) {
+  func showError(error: String) {
+    AlertHelper.showAlert(from: self, message: error) {
     }
   }
 }

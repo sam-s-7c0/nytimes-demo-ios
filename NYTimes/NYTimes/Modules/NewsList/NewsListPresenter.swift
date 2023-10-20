@@ -52,7 +52,7 @@ extension NewsListPresenter: NewsListPresenterProtocol {
   
   func showError(error: NYNetworkError) {
     self.view?.hideLoader()
-    self.view?.showError(error: error)
+    self.view?.showError(error: error.errorMessage())
   }
   
   func selectedOption(duration: String?) {

@@ -19,39 +19,62 @@ final class NewsListInteractor {
 extension NewsListInteractor: NewsListInteractorProtocol {
   
   func fetchNews(duration: Int) {
+    guard ConnectivityChecker.isConnectedToInternet() else {
+      presenter?.showError(error: .noInternet)
+      return
+    }
     
-    let urlString = "\(NetworkConstants.newsListURL)\(duration).json?api-key=\(NetworkConstants.API_KEY)"
-
-    guard let request = URLRequest.init(url: urlString, method: .get, body: nil ) else {
-      presenter?.showError(error: .urlInvalid)
-      return  }
-    let task = NewsListInteractor.apiClient.dataTask(request) { [weak self] result in
-      switch result {
-      case .success(let (data, _)):
-        do {
-          let result = try JSONDecoder().decode(NewsResponse.self, from: data)
-          self?.presenter?.fetchNews(result: result)
-        } catch let error {
-          self?.presenter?.showError(error: .decodingError(error))
-        }
-      case .failure(let error):
-        
-        switch error {
-        case .noData:
-          self?.presenter?.showError(error: .noData)
-        case .urlInvalid:
-          self?.presenter?.showError(error: .urlInvalid)
-        case .connectionError:
-          self?.presenter?.showError(error: .connectionError)
-        case .requestError:
-          self?.presenter?.showError(error: .requestError)
-        case .responseError(let error):
-          self?.presenter?.showError(error: .responseError(error))
-        case .decodingError(let error):
-          self?.presenter?.showError(error: .decodingError(error))
+    if let previousTask = newsTask {
+      previousTask.cancel()
+    }
+    
+    do {
+      let request = try buildRequest(for: duration)
+      newsTask =  NewsListInteractor.apiClient.dataTask(request) { [weak self] result in
+        switch result {
+        case .success(let (data, _)):
+          self?.processData(data)
+        case .failure(let error):
+          self?.handleError(error)
         }
       }
+      newsTask.resume()
+    } catch {
+      presenter?.showError(error: .urlInvalid)
     }
-    task.resume()
+  }
+  
+  private func buildRequest(for duration: Int) throws -> URLRequest {
+    let urlString = "\(NetworkConstants.newsListURL)\(duration).json?api-key=\(NetworkConstants.API_KEY)"
+    
+    guard let request = URLRequest.init(url: urlString, method: .get, body: nil) else {
+      throw NYNetworkError.urlInvalid
+    }
+    
+    return request
+  }
+  
+  private func processData(_ data: Data) {
+    do {
+      let result = try JSONDecoder().decode(NewsResponse.self, from: data)
+      presenter?.fetchNews(result: result)
+    } catch {
+      presenter?.showError(error: .decodingError)
+    }
+  }
+  
+  private func handleError(_ error: NYNetworkError) {
+    switch error {
+    case .noData:
+      presenter?.showError(error: .noData)
+    case .noInternet:
+      presenter?.showError(error: .noInternet)
+    case .connectionError:
+      presenter?.showError(error: .connectionError)
+    case .requestError:
+      presenter?.showError(error: .requestError)
+    default:
+      presenter?.showError(error: .unknown)
+    }
   }
 }
